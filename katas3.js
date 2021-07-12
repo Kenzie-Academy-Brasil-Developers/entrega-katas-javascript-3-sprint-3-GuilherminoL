@@ -43,7 +43,7 @@ function kata4() {
 
 function kata5() {
     let output = []
-    for(let i = -25; i <= 25; i = i+2){
+    for(let i = -25; i <= 25; i += 2){
         output.push(i)
     }
     showResults(output)
@@ -51,7 +51,7 @@ function kata5() {
 
 function kata6() {
     let output = []
-    for(let i= 3; i<=100; i = i+3 ){
+    for(let i= 3; i<=100; i += 3 ){
         output.push(i)
     }
     showResults(output)
@@ -59,7 +59,7 @@ function kata6() {
 
 function kata7() {
     let output = []
-    for(let i= 7; i<=100; i = i+7 ){
+    for(let i= 7; i<=100; i +=7 ){
         output.push(i)
     }
     showResults(output)
@@ -77,7 +77,7 @@ function kata8() {
 
 function kata9() {
     let output = [];
-    for(let i = 0; i <= 100; i = i+5){
+    for(let i = 0; i <= 100; i+=5){
         if (i % 2 !== 0){
             output.push(i)
         }
@@ -169,23 +169,51 @@ function kata18() {
 /**
  * Daqui em diante são os bônus, por sua conta e risco
  */
-
+ function CreateElement(altura, largura, cor) {
+    newElement = document.createElement("div");
+    newElement.style.width = largura + 'px'
+    newElement.style.height = altura + 'px'
+    newElement.style.margin = '5px'
+    newElement.style.backgroundColor = cor
+    container = document.getElementById('body')
+    container.appendChild(newElement)
+}
 function kataBonus1() {
-    // implemente o código do kata bonus 1 aqui
+    for (let i = 0; i <20 ; i++) {
+        CreateElement(20, 100, 'grey')
+    }
 }
 
 function kataBonus2() {
-    // implemente o código do kata bonus 2 aqui
+    for (let altura = 105; altura <= 200; altura +=5 ){
+        CreateElement(20, altura, 'grey')
+    }
 }
 
 function kataBonus3() {
-    // implemente o código do kata bonus 3 aqui
+    for (let i = 0; i <sampleArray.length; i++){
+        CreateElement(20 ,sampleArray[i],'grey')
+    }
 }
 
 function kataBonus4() {
-    // implemente o código do kata bonus 4 aqui
+    for (let i = 0; i <sampleArray.length; i++){
+        if ((i+2) % 2===0){
+            CreateElement(20 ,sampleArray[i],'red')
+            continue
+        }
+        
+        CreateElement(20 ,sampleArray[i],'grey')
+    }
 }
 
 function kataBonus5() {
-    // implemente o código do kata bonus 5 aqui
+    for (let i = 0; i <sampleArray.length; i++){
+        if (sampleArray[i] % 2===0){
+            CreateElement(20 ,sampleArray[i],'red')
+            continue
+        }
+        
+        CreateElement(20 ,sampleArray[i],'grey')
+    }
 }
