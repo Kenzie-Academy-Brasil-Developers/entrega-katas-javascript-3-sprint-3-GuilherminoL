@@ -195,30 +195,34 @@ kata18()
     container = document.getElementById('body')
     container.appendChild(newElement)
 }
+function CreateH3(texto){
+    let newElement = document.createElement('h2')
+    newElement.innerText = texto
+    let body = document.getElementById('body')
+    body.appendChild(newElement)
+}
+CreateH3('Kata Extra 1')
 function kataBonus1() {
     for (let i = 0; i <20 ; i++) {
         CreateElement(20, 100, 'grey')
     }
-    CreateElement(50, 2000, 'black')
 }
 kataBonus1()
-
+CreateH3('Kata Extra 2')
 function kataBonus2() {
     for (let altura = 105; altura <= 200; altura +=5 ){
         CreateElement(20, altura, 'grey')
     }
-    CreateElement(50, 2000, 'black')
 }
 kataBonus2()
-
+CreateH3('Kata Extra 3')
 function kataBonus3() {
     for (let i = 0; i <sampleArray.length; i++){
         CreateElement(20 ,sampleArray[i],'grey')
     }
-    CreateElement(50, 2000, 'black')
 }
 kataBonus3()
-
+CreateH3('Kata Extra 4')
 function kataBonus4() {
     for (let i = 0; i <sampleArray.length; i++){
         if ((i+2) % 2===0){
@@ -228,17 +232,15 @@ function kataBonus4() {
         
         CreateElement(20 ,sampleArray[i],'grey')
     }
-    CreateElement(50, 2000, 'black')
 }
 kataBonus4()
-
+CreateH3('Kata Extra 5')
 function kataBonus5() {
     for (let i = 0; i <sampleArray.length; i++){
         if (sampleArray[i] % 2===0){
             CreateElement(20 ,sampleArray[i],'red')
             continue
         }
-        
         CreateElement(20 ,sampleArray[i],'grey')
     }
 }
