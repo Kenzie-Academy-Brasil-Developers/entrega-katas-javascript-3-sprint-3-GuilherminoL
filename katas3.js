@@ -16,6 +16,7 @@ function kata1() {
     }
     showResults(output)
 }
+kata1()
 
 function kata2() {
     let output = []
@@ -24,6 +25,7 @@ function kata2() {
     }
     showResults(output)
 }
+kata2()
 
 function kata3() {
     let output = []
@@ -32,6 +34,7 @@ function kata3() {
     }
     showResults(output)
 }
+kata3()
 
 function kata4() {
     let output = []
@@ -40,6 +43,7 @@ function kata4() {
     }
     showResults(output)
 }
+kata4()
 
 function kata5() {
     let output = []
@@ -48,6 +52,7 @@ function kata5() {
     }
     showResults(output)
 }
+kata5()
 
 function kata6() {
     let output = []
@@ -56,6 +61,7 @@ function kata6() {
     }
     showResults(output)
 }
+kata6()
 
 function kata7() {
     let output = []
@@ -64,6 +70,7 @@ function kata7() {
     }
     showResults(output)
 }
+kata7()
 
 function kata8() {
     let output = []
@@ -74,7 +81,7 @@ function kata8() {
     }
     showResults(output)
 }
-
+kata8()
 function kata9() {
     let output = [];
     for(let i = 0; i <= 100; i+=5){
@@ -84,14 +91,15 @@ function kata9() {
     }
     showResults(output)
 }
-
+kata9()
 function kata10() {
     let output = []
-    for(let i = 0; i <sampleAr99999999ray.length; i++){
+    for(let i = 0; i <sampleArray.length; i++){
         output.push(sampleArray[i])
     }
     showResults(output)
 }
+kata10()
 
 function kata11() {
     let output = []
@@ -102,6 +110,7 @@ function kata11() {
     }
     showResults(output)
 }
+kata11()
 
 function kata12() {
     let output = []
@@ -112,6 +121,7 @@ function kata12() {
     }
     showResults(output)
 }
+kata12()
 
 function kata13() {
     let output = []
@@ -122,6 +132,7 @@ function kata13() {
     }
     showResults(output)
 }
+kata13()
 
 function kata14() {
     let output = []
@@ -130,6 +141,7 @@ function kata14() {
     }
     showResults(output)
 }
+kata14()
 
 function kata15() {
     let output = 0
@@ -138,6 +150,7 @@ function kata15() {
     }
     showResults(output)
 }
+kata15()
 
 function kata16() {
     let output = 0
@@ -146,6 +159,7 @@ function kata16() {
     }
     showResults(output)
 }
+kata16()
 
 function kata17() {
     let output = 99999999
@@ -156,6 +170,7 @@ function kata17() {
     }
     showResults(output)
 }
+kata17()
 
 function kata18() {
     let output = 0
@@ -166,6 +181,8 @@ function kata18() {
     }
     showResults(output)
 }
+kata18()
+
 /**
  * Daqui em diante são os bônus, por sua conta e risco
  */
@@ -182,19 +199,25 @@ function kataBonus1() {
     for (let i = 0; i <20 ; i++) {
         CreateElement(20, 100, 'grey')
     }
+    CreateElement(50, 2000, 'black')
 }
+kataBonus1()
 
 function kataBonus2() {
     for (let altura = 105; altura <= 200; altura +=5 ){
         CreateElement(20, altura, 'grey')
     }
+    CreateElement(50, 2000, 'black')
 }
+kataBonus2()
 
 function kataBonus3() {
     for (let i = 0; i <sampleArray.length; i++){
         CreateElement(20 ,sampleArray[i],'grey')
     }
+    CreateElement(50, 2000, 'black')
 }
+kataBonus3()
 
 function kataBonus4() {
     for (let i = 0; i <sampleArray.length; i++){
@@ -205,7 +228,9 @@ function kataBonus4() {
         
         CreateElement(20 ,sampleArray[i],'grey')
     }
+    CreateElement(50, 2000, 'black')
 }
+kataBonus4()
 
 function kataBonus5() {
     for (let i = 0; i <sampleArray.length; i++){
@@ -217,3 +242,4 @@ function kataBonus5() {
         CreateElement(20 ,sampleArray[i],'grey')
     }
 }
+kataBonus5()
